@@ -1,0 +1,339 @@
+@import "color";
+@import "fuentes";
+
+@media (min-width: 801px) {
+.mat-toolbar{
+  background-color: $primarycolor !important;
+  .contenedorbarra{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+  }
+}
+
+.titulonav{
+  display: flex;
+  justify-content: center;
+  color: $secondarycolor;
+  @include fuenteMenus(20px);
+}
+footer{
+  background-color: $primarycolor;
+  width: 100%;
+  bottom: 0;
+  .contenedorfooter{
+    display: flex;
+    justify-content: space-between;
+    @include fuenteMenus(20px);
+  }
+  button{
+    width: 150px;
+    height: 30px;
+    background-color: $backgroundresaltar;
+    color: $buttons;
+  }
+}
+
+body{
+  background-color: $background;
+}
+
+.tamañoimg{
+  width: 100%;
+  height: 800px;
+}
+
+.textohome{
+  p{
+    padding: 5%;
+    @include fuenteTextos(15px);
+  }
+}
+mat-card{
+  width: 350px;
+  height: 550px;
+
+
+
+  mat-card-title{
+    color: $secondarycolor;
+    background-color: $primarycolor;
+    padding: 10%;
+
+
+  }
+  mat-card-content{
+
+    background-color: $primarycolor;
+    color: $secondarycolor;
+    padding: 10%;
+  }
+}
+.tarjetas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imgcard{
+  width: 300px;
+  height: 200px;
+}
+.botoncard{
+  background-color: $backgroundresaltar;
+  justify-content: end;
+  color: $buttons;
+  width: 30px;
+  height: 30px;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30%;
+
+}
+mat-form-field{
+  background-color: $primarycolor;
+}
+
+}
+
+//Estilo max800px
+
+
+
+
+@media (max-width: 800px) {
+  .mat-toolbar{
+    background-color: $primarycolor;
+    .contenedorbarra{
+      display: flex;
+      color: white;
+      justify-content: space-around;
+    }
+  }
+
+  .titulonav{
+    display: flex;
+    justify-content: center;
+    color: $secondarycolor;
+    @include fuenteMenus(15px);
+  }
+  footer{
+    background-color: $primarycolor;
+    width: 100%;
+    bottom: 0;
+    .contenedorfooter{
+      display: flex;
+      justify-content: space-between;
+      @include fuenteMenus(15px);
+    }
+    button{
+      width: 150px;
+      height: 30px;
+      background-color: $backgroundresaltar;
+      color: $buttons;
+    }
+  }
+
+  body{
+    background-color: $background;
+  }
+
+  .tamañoimg{
+    width: 100%;
+    height: 500px;
+  }
+
+  .textohome{
+    p{
+      padding: 5%;
+      @include fuenteTextos(15px);
+    }
+  }
+  mat-card{
+    width: 350px;
+    height: 550px;
+    width: 100%;
+
+
+
+    mat-card-title{
+      color: $secondarycolor;
+      background-color: $primarycolor;
+      padding: 10%;
+
+
+    }
+    mat-card-content{
+
+      background-color: $primarycolor;
+      color: $secondarycolor;
+      padding: 10%;
+    }
+  }
+  .tarjetas{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .imgcard{
+    width: 100%;
+    height: 150px;
+  }
+  .botoncard{
+    background-color: $backgroundresaltar;
+    justify-content: end;
+    color: $buttons;
+    width: 30px;
+    height: 30px;
+  }
+
+  .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  mat-form-field{
+    background-color: $primarycolor;
+  }
+
+}
+
+
+
+//Estilo max400px
+@media (max-width: 400px) {
+  .mat-toolbar{
+    background-color: $primarycolor;
+    .contenedorbarra{
+      display: flex;
+      color: white;
+      justify-content: space-around;
+    }
+  }
+
+  .titulonav{
+    display: flex;
+    justify-content: center;
+    color: $secondarycolor;
+    @include fuenteMenus(10px);
+  }
+  footer{
+    background-color: $primarycolor;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    .contenedorfooter{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include fuenteMenus(10px);
+    }
+    button{
+      width: 150px;
+      height: 30px;
+      background-color: $backgroundresaltar;
+      color: $buttons;
+    }
+  }
+
+  body{
+    background-color: $background;
+  }
+
+  .tamañoimg{
+    width: 100%;
+    height: 200px;
+  }
+
+  .textohome{
+    p{
+      padding: 5%;
+      @include fuenteTextos(15px);
+    }
+  }
+  mat-card{
+    width: 100%;
+    height: 500px;
+    padding: 2%;
+
+
+
+    mat-card-title{
+      color: $secondarycolor;
+      background-color: $primarycolor;
+      padding: 10%;
+
+
+    }
+    mat-card-content{
+
+      background-color: $primarycolor;
+      color: $secondarycolor;
+      padding: 10%;
+    }
+  }
+  .tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .imgcard{
+    width: 100%;
+    height: 100px;
+  }
+  .botoncard{
+    background-color: $backgroundresaltar;
+    justify-content: end;
+    color: $buttons;
+    width: 30px;
+    height: 30px;
+  }
+
+  .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  mat-form-field{
+    background-color: $primarycolor;
+  }
+
+}
+
+
+
+
+
+.paralax-content {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  padding-top: 2%;
+
+}
+
+@mixin paralax($rutaimagen){
+  position: relative;
+  background: url($rutaimagen)
+    no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 700px;
+}

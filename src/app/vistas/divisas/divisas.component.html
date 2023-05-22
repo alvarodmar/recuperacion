@@ -1,0 +1,24 @@
+<div class="contenedor">
+  <div>
+    <div>
+    <h1>Cambio euro a libra</h1>
+    </div>
+    <div class="contenido">
+        <mat-form-field>
+        <input  matInput step="1" [(ngModel)]="eurlib" change="cuentaeurlib()" type="number" />
+        </mat-form-field>
+        <p >libras: {{totalcuenta}}</p>
+  </div>
+  </div>
+  <div>
+      <div>
+      <h1>Cambio libra a euro </h1>
+      </div>
+      <div>
+          <mat-form-field>
+          <input matInput step="1" [(ngModel)]="libeur" change="cuentalibeur()"  type="number"/>
+        </mat-form-field>
+      <p>euros: {{totalcuenta2}}</p>
+    </div>
+    </div>
+</div>

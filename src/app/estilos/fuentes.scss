@@ -1,0 +1,21 @@
+@import "color";
+$titulos: 'Montserrat';
+$textos: 'Marriweather';
+$menus: 'EB Garamond';
+
+
+@mixin fuenteTitulos($tamaño){
+  color: $primarycolor !important;
+  font-size: $tamaño !important;
+  font-family: $titulos !important;
+}
+@mixin fuenteTextos($tamaño){
+  color: $primarycolor !important;
+  font-size: $tamaño !important;
+  font-family: $textos !important;
+}
+@mixin fuenteMenus($tamaño){
+  color: $secondarycolor !important;
+  font-size: $tamaño !important;
+  font-family: $menus !important;
+}
